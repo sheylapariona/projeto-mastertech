@@ -1,5 +1,6 @@
 body{
-    margin: 0;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1{
@@ -7,20 +8,44 @@ h1{
     font-size: 55px;
 }
 
-/* Macete para alinhar uma imagem no centro */
+/* exemplo do media query abaixo, onde ao mudar o tamanho pra uma tela de ipad muda a cor e alguns parametros do texto, conforme a preferencia */
+
+@media screen and (max-width: 768px){
+    h1{
+      color:red;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+}
+/* fim do exemplo media query */
+
+/* Macete para alinhar uma imagem no centro, como um bloco no centro, display block */
+
+/* border poe espessura na linha da borda */
+
+.margin{
+display: block;
+}
+
 .banner{
-    width: 50%;
+    width: 30%;
     margin: auto;
     display: block;
     margin-bottom: 10px;
 }
 
-.margin{
-    margin: 0 5%;
+#bandeira{
+  width: 30%;
 }
 
 #imagem10{
     border: 1px solid red;
+
+.margin{
+    margin: 0 5%;
+}
+
+
 }
 
 section{
